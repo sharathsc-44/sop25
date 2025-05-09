@@ -9,7 +9,7 @@ const Mission = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
             <p className="text-lg mb-4 text-white mario-font text-sm leading-6">
-              Super Mario Fest brings together gamers from across the Mushroom Kingdom for a weekend of adventure, competition, and coin collecting.
+              SOP brings together gamers from across the Mushroom Kingdom for a weekend of adventure, competition, and coin collecting.
             </p>
             <p className="text-lg text-white mario-font text-sm leading-6">
               Our mission is to defeat Bowser, save Princess Peach, and create memorable gaming moments for everyone in attendance. No Goombas allowed!
