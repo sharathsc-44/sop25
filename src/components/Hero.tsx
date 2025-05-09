@@ -51,14 +51,14 @@ const Hero = () => {
       </div>
       <div className="relative z-10">
         <h1 className="text-3xl md:text-5xl mb-6 font-bold mario-font tracking-widest">
-          <span className="text-yellow-300">SUPER</span> 
-          <span className="text-white">MARIO</span> 
-          <span className="text-green-400">FEST</span>
+          <span className="text-yellow-300">Summer of</span> 
+          <span className="text-white">Projects</span> 
+          <span className="text-green-400">25</span>
         </h1>
         <div className="flex justify-center mb-8">
           <Star className="text-yellow-300 h-6 w-6 mr-1" />
           <Star className="text-yellow-300 h-6 w-6 mr-1" />
-          <p className="text-xl mb-2">IT'S-A ME, THE ULTIMATE GAMING EVENT!</p>
+          <p className="text-xl mb-2">IT'S-A ME, THE ULTIMATE LEARNING EVENT!</p>
           <Star className="text-yellow-300 h-6 w-6 ml-1" />
           <Star className="text-yellow-300 h-6 w-6 ml-1" />
         </div>
@@ -83,7 +83,7 @@ const Hero = () => {
         </div>
         
         <button className="mario-button transform transition hover:scale-105">
-          START GAME
+          START LEARNING
         </button>
       </div>
     </section>
