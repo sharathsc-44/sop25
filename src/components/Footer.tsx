@@ -18,8 +18,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 border-b border-blue-700 pb-2">SUPER MARIO FEST</h3>
-            <p>The ultimate Mario gaming experience for players of all levels. Join us for competitions, power-ups, and Mushroom Kingdom celebration!</p>
+            <h3 className="text-xl font-bold mb-4 border-b border-blue-700 pb-2">SUMMER OF PROJECTS 25</h3>
+            <p>The ultimate LEARNING experience for players of all levels. Join us for competitions, power-ups, and some CARZWYYY celebration!</p>
           </div>
           
           <div>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-blue-800 pt-4 text-center text-xs text-blue-300">
-          <p>&copy; {new Date().getFullYear()} Super Mario Fest. All rights belong to Nintendo.</p>
+          <p>&copy; {new Date().getFullYear()} RAS-BMSIT. MADE WITH LOVE BY RAS TEAM </p>
         </div>
       </div>
     </footer>
