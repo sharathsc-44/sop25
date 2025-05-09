@@ -1,22 +1,12 @@
-# Welcome to your Lovable project
+# Welcome SOP25 project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/2f7f78f5-0dab-4cf2-849b-ffa9b010e0ee
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2f7f78f5-0dab-4cf2-849b-ffa9b010e0ee) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+**URL**: https://ras-bmsit.github.io/sop25  (YET TO BE PUBLISHED)
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -60,14 +50,28 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## How can I deploy this project? in github pages
+```sh
+# Step 1: install github pages
+npm i gh=pages --save-dev
 
-Simply open [Lovable](https://lovable.dev/projects/2f7f78f5-0dab-4cf2-849b-ffa9b010e0ee) and click on Share -> Publish.
+# Step 2:Add Homapage to Package.json file
+"homepage": "https://ras-bmsit.github.io/sop25",
 
-## Can I connect a custom domain to my Lovable project?
+# Step 3:Add scripts to the same Package.json file
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Step 4: 
+git init
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Step 5:
+git remote add origin https://gtihub.com/ras-bmsit/sop25.git
+
+```
+
+
+
+
+
