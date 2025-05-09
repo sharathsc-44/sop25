@@ -1,5 +1,5 @@
 
-import { Trophy } from "lucide-react";
+import { Trophy, Coins } from "lucide-react";
 
 const Leaderboard = () => {
   const topPlayers = [
@@ -38,7 +38,7 @@ const Leaderboard = () => {
                   <td className="py-3 px-4 text-yellow-300">{player.name}</td>
                   <td className="py-3 px-4 text-white">{player.game}</td>
                   <td className="py-3 px-4 font-semibold text-green-400">
-                    {player.score} <Coin className="inline h-4 w-4 text-yellow-300 coin-animate" />
+                    {player.score} <Coins className="inline h-4 w-4 text-yellow-300 coin-animate" />
                   </td>
                 </tr>
               ))}

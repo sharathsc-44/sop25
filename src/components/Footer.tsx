@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Mushroom, Star, Coin } from "lucide-react";
+import { Star, Gamepad, Coins } from "lucide-react";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -25,11 +25,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 border-b border-blue-700 pb-2">WARP PIPES</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-yellow-300 flex items-center"><Mushroom className="h-4 w-4 mr-2 text-red-400" /> Home</a></li>
+              <li><a href="#" className="hover:text-yellow-300 flex items-center"><Gamepad className="h-4 w-4 mr-2 text-red-400" /> Home</a></li>
               <li><a href="#mission" className="hover:text-yellow-300 flex items-center"><Star className="h-4 w-4 mr-2 text-yellow-400" /> World 1-1</a></li>
-              <li><a href="#powerups" className="hover:text-yellow-300 flex items-center"><Mushroom className="h-4 w-4 mr-2 text-red-400" /> Power-Ups</a></li>
+              <li><a href="#powerups" className="hover:text-yellow-300 flex items-center"><Gamepad className="h-4 w-4 mr-2 text-red-400" /> Power-Ups</a></li>
               <li><a href="#schedule" className="hover:text-yellow-300 flex items-center"><Star className="h-4 w-4 mr-2 text-yellow-400" /> Warp Zones</a></li>
-              <li><a href="#join" className="hover:text-yellow-300 flex items-center"><Coin className="h-4 w-4 mr-2 text-yellow-400 coin-animate" /> Join Quest</a></li>
+              <li><a href="#join" className="hover:text-yellow-300 flex items-center"><Coins className="h-4 w-4 mr-2 text-yellow-400 coin-animate" /> Join Quest</a></li>
             </ul>
           </div>
           

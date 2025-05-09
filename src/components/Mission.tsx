@@ -1,5 +1,5 @@
 
-import { Mushroom } from "lucide-react";
+import { Gamepad } from "lucide-react";
 
 const Mission = () => {
   return (
@@ -18,7 +18,7 @@ const Mission = () => {
           <div className="md:w-1/2 question-block p-4 rounded">
             <div className="flex justify-center items-center p-8">
               <div className="flex flex-col items-center">
-                <Mushroom size={64} className="text-red-500 mb-4" />
+                <Gamepad size={64} className="text-red-500 mb-4" />
                 <div className="text-xl text-black font-bold mario-font">1-UP</div>
               </div>
             </div>

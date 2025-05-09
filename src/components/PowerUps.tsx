@@ -1,12 +1,12 @@
 
-import { Mushroom, Star, Coin, Gamepad } from "lucide-react";
+import { Gamepad, Star, Coins, Download } from "lucide-react";
 
 const PowerUps = () => {
   const powerUps = [
     {
       title: "Mushroom Tournaments",
       description: "Grow your gaming skills with tournaments and prizes",
-      icon: <Mushroom className="h-10 w-10 text-red-500" />
+      icon: <Gamepad className="h-10 w-10 text-red-500" />
     },
     {
       title: "Star Power Arcade",
@@ -21,7 +21,7 @@ const PowerUps = () => {
     {
       title: "Coin Collection",
       description: "Learn from gaming pros in our workshops",
-      icon: <Coin className="h-10 w-10 text-yellow-400" />
+      icon: <Coins className="h-10 w-10 text-yellow-400" />
     }
   ];
 

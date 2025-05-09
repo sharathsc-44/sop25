@@ -1,5 +1,5 @@
 
-import { Star, Mushroom, Trophy, Gamepad } from "lucide-react";
+import { Star, Gamepad, Trophy, Download } from "lucide-react";
 
 const JoinUs = () => {
   return (
@@ -15,7 +15,7 @@ const JoinUs = () => {
             </p>
             <ul className="mb-6 space-y-3 mario-font text-xs">
               <li className="flex items-center">
-                <Mushroom className="text-red-300 h-5 w-5 mr-2" /> Access to all worlds and castles
+                <Gamepad className="text-red-300 h-5 w-5 mr-2" /> Access to all worlds and castles
               </li>
               <li className="flex items-center">
                 <Star className="text-yellow-300 h-5 w-5 mr-2" /> Meet Mario and friends
