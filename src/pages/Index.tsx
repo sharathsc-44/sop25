@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState, useEffect } from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Mission from "../components/Mission";
+import PowerUps from "../components/PowerUps";
+import Schedule from "../components/Schedule";
+import Leaderboard from "../components/Leaderboard";
+import JoinUs from "../components/JoinUs";
+import Sponsors from "../components/Sponsors";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="retro-gaming-page">
+      <Navbar />
+      <div className="container mx-auto px-4">
+        <Hero />
+        <Mission />
+        <PowerUps />
+        <Schedule />
+        <Leaderboard />
+        <JoinUs />
+        <Sponsors />
       </div>
+      <Footer />
     </div>
   );
 };
