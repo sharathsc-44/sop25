@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="retro-gaming-page">
+    <div className="super-mario-page">
       <Navbar />
       <div className="container mx-auto px-4">
         <Hero />

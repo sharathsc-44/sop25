@@ -50,6 +50,15 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Mario theme colors */
+    --mario-red: 0 79% 48%;
+    --mario-blue: 217 92% 51%;
+    --mario-yellow: 43 100% 66%;
+    --mario-green: 126 40% 48%;
+    --mario-brown: 30 58% 36%;
+    --mario-black: 0 0% 0%;
+    --mario-sky: 202 92% 85%;
   }
 
   .dark {
@@ -101,7 +110,7 @@
   }
 }
 
-/* Custom Retro Gaming Styles */
+/* Import Nintendo-style Font */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .pixelated {
@@ -109,7 +118,121 @@
   image-rendering: pixelated;
 }
 
-.retro-gaming-page {
-  background-color: #f5f5f5;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNmMGYwZjAiPjwvcmVjdD4KPC9zdmc+');
+/* Super Mario Theme */
+.super-mario-page {
+  background-color: hsl(var(--mario-sky));
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cg fill='%23FFFFFF' opacity='0.2'%3E%3Crect x='0' y='0' width='4' height='4'/%3E%3Crect x='8' y='8' width='4' height='4'/%3E%3Crect x='16' y='16' width='4' height='4'/%3E%3Crect x='24' y='24' width='4' height='4'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+.mario-font {
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.05em;
+}
+
+/* Pixel Block Borders */
+.pixel-border {
+  position: relative;
+  display: inline-block;
+}
+
+.pixel-border::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, hsl(var(--mario-red)) 25%, transparent 25%) -5px 0,
+              linear-gradient(135deg, hsl(var(--mario-red)) 25%, transparent 25%) -5px 0,
+              linear-gradient(225deg, hsl(var(--mario-red)) 25%, transparent 25%) -5px 0,
+              linear-gradient(315deg, hsl(var(--mario-red)) 25%, transparent 25%) -5px 0;
+  background-size: 10px 10px;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+/* Mario Brick Block */
+.brick-block {
+  background-color: hsl(var(--mario-brown));
+  border-top: 4px solid rgba(255,255,255,0.3);
+  border-left: 4px solid rgba(255,255,255,0.3);
+  border-right: 4px solid rgba(0,0,0,0.3);
+  border-bottom: 4px solid rgba(0,0,0,0.3);
+  box-shadow: inset -2px -2px 0px rgba(0,0,0,0.3), inset 2px 2px 0px rgba(255,255,255,0.3);
+}
+
+/* Question Block */
+.question-block {
+  background-color: hsl(var(--mario-yellow));
+  border-top: 4px solid rgba(255,255,255,0.5);
+  border-left: 4px solid rgba(255,255,255,0.5);
+  border-right: 4px solid rgba(0,0,0,0.3);
+  border-bottom: 4px solid rgba(0,0,0,0.3);
+  box-shadow: inset -2px -2px 0px rgba(0,0,0,0.3), inset 2px 2px 0px rgba(255,255,255,0.5);
+}
+
+/* Mario Button */
+.mario-button {
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  background-color: hsl(var(--mario-red));
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgba(0,0,0,0.3);
+  border-right: 4px solid rgba(0,0,0,0.3);
+  border-top: 4px solid rgba(255,255,255,0.3);
+  border-left: 4px solid rgba(255,255,255,0.3);
+  transition: all 0.1s;
+}
+
+.mario-button:hover {
+  transform: translateY(-2px);
+}
+
+.mario-button:active {
+  transform: translateY(2px);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  border-right: 2px solid rgba(0,0,0,0.3);
+}
+
+/* Coin Animation */
+@keyframes coin-spin {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg); scale: 0.8; }
+  100% { transform: rotateY(0deg); }
+}
+
+.coin-animate {
+  animation: coin-spin 2s infinite;
+  display: inline-block;
+}
+
+/* Mushroom Power-Up */
+.power-up-card {
+  transition: transform 0.3s;
+}
+
+.power-up-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Pipe Design */
+.mario-pipe {
+  background-color: hsl(var(--mario-green));
+  border-top: 4px solid rgba(255,255,255,0.3);
+  border-left: 4px solid rgba(255,255,255,0.3);
+  border-right: 4px solid rgba(0,0,0,0.3);
+  border-bottom: 4px solid rgba(0,0,0,0.3);
+}
+
+/* Mario Flag */
+.mario-flag {
+  width: 0;
+  height: 0;
+  border-left: 20px solid hsl(var(--mario-red));
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
