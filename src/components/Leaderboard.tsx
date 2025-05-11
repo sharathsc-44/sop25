@@ -1,4 +1,3 @@
-
 import { Trophy, Coins } from "lucide-react";
 
 const Leaderboard = () => {
