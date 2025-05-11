@@ -1,14 +1,23 @@
+
 {
   "name": "src",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://ras-bmsit.github.io/sop25",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
